@@ -39,9 +39,6 @@ const Header = () => {
   return (
     <header className="header">
       <ContentWrapper>
-        <div className="logo">
-          <img src="" alt="logo" />
-        </div>
         <ul className="menuItems">
           <li className="menuItem" onClick={() => navigationHandler("movie")}>Movies</li>
           <li className="menuItem" onClick={() => navigationHandler("tv")}>TV Shows</li>
@@ -57,7 +54,8 @@ const Header = () => {
                         onChange={(e) => setQuery(e.target.value)}
                         onKeyUp={searchQueryHandler}
                     />
-                    <img src="" alt="close" onClick={() => setShowSearch(false)} />
+                    {/*<img src="" alt="close" onClick={() => setShowSearch(false)} />*/}
+                    <button onClick={() => setShowSearch(false)}>X</button>
           </div>
         </ContentWrapper>
       </div>
