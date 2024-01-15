@@ -1,0 +1,28 @@
+.detailsBanner {
+    width: 100%;
+    background-color: var(--black);
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.detailsBanner .content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.detailsBanner .content .left {
+    flex-shrink: 0;
+}
+
+.detailsBanner .content .left .posterImg {
+    width: 350px;
+    height: 700px;
+    display: block;
+    border-radius: 12px;
+}
+
+.detailsBanner .content .right{
+    color: white;
+}
