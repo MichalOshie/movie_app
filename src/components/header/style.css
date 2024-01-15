@@ -1,0 +1,52 @@
+.header {
+    position: fixed;
+    transform: translateY(0);
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.5s;
+    z-index: 2;
+}
+
+.header .top {
+    background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3.5px);
+        -webkit-backdrop-filter: blur(3.5px);
+}
+
+.header .show {
+    background-color: black;
+}
+
+.header .hide {
+    transform: translateY(-60px);
+}
+
+.header .contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .menuItems {
+    list-style-type: none;
+    display: none;
+    align-items: center;
+    display: flex;
+}
+
+.header .menuItems .menuItem {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+.header .menuItems .menuItem .searchIcon {
+    margin-right: 0;
+}
